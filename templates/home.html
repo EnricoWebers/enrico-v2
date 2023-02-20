@@ -2,9 +2,49 @@
 <html>
   <head>
     <title>Dashboard 2023</title>
+    <style>
+      h1 {
+        font-size: 40px;
+        font-weight: normal;
+        font-family: Arial;
+        color: rgb(30,20,50);
+        text-align: center;
+      }
+      h2 {
+        font-size: 32px;
+        font-weight: normal;
+        font-family: Arial;
+        color: rgb(100,100,10);
+        text-align: center;
+      }
+      .bodytext {
+        font-weight: normal;
+        font-family: Arial;
+        color: rgb(100,10,10);
+      }
+      #banner {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+      }
+      #container {
+        max-width: 720px;
+        margin: 0 auto 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is my first web page (no it's not)</h1>
-    <img src="static/banner.jpg">
+    <div id="container">
+      <h1>This is my first web page (no it's not)</h1>
+      <img id="banner" src="https://dashboard2023.enricowebers.repl.co/static/banner.jpg" height="100" width="1000">
+      <h2>About Jovian</h2>
+      <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare condimentum imperdiet. Nunc interdum lacus ante, et facilisis eros porttitor aliquam. Pellentesque pulvinar non augue vitae placerat. Quisque efficitur at libero in condimentum. Etiam sit amet neque ac risus commodo fermentum a non leo. Morbi eleifend tellus arcu, vel accumsan diam scelerisque congue. Integer scelerisque porta turpis, commodo dignissim dui auctor ac. Nulla eros neque, hendrerit in mattis sit amet, dapibus eu nisi. Sed dignissim porttitor purus, eu vulputate lorem blandit eget. Etiam tristique tortor tellus, sed venenatis sapien ullamcorper sed. Vivamus vestibulum sagittis cursus. Maecenas venenatis feugiat diam. Proin dolor dui, vulputate a posuere nec, euismod id eros.</p>
+      <h2>Job Openings</h2>
+      <p class="bodytext">SHOW THE JOBS HERE</p>
+      <div style="text-align: center;">
+        <button>Contact us</button>
+        <p>Copyright by me!</p>
+      </div>
+    </div>
   </body>
 </html>
