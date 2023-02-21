@@ -10,16 +10,24 @@
         height: 100px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
-    {% include 'nav.html' %}
+    {% include 'nav2.html' %}
+    <img class="img-fluid" id="banner" src="/static/banner.jpg" >
     <div class="container text-center">
-      <h1>{{company_name}} Careers</h1>
-      <img class="img-fluid" id="banner" src="https://dashboard2023.enricowebers.repl.co/static/banner.jpg" >
       <h2>About {{company_name}}</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare condimentum imperdiet. Nunc interdum lacus ante, et facilisis eros porttitor aliquam. Pellentesque pulvinar non augue vitae placerat. Quisque efficitur at libero in condimentum. Etiam sit amet neque ac risus commodo fermentum a non leo. Morbi eleifend tellus arcu, vel accumsan diam scelerisque congue. Integer scelerisque porta turpis, commodo dignissim dui auctor ac. Nulla eros neque, hendrerit in mattis sit amet, dapibus eu nisi. Sed dignissim porttitor purus, eu vulputate lorem blandit eget. Etiam tristique tortor tellus, sed venenatis sapien ullamcorper sed. Vivamus vestibulum sagittis cursus. Maecenas venenatis feugiat diam. Proin dolor dui, vulputate a posuere nec, euismod id eros.</p>
+      <div class="row">
+        <div class="col-10">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare condimentum imperdiet. Nunc interdum lacus ante, et facilisis eros porttitor aliquam. Pellentesque pulvinar non augue vitae placerat. Quisque efficitur at libero in condimentum. Etiam sit amet neque ac risus commodo fermentum a non leo. Morbi eleifend tellus arcu, vel accumsan diam scelerisque congue. Integer scelerisque porta turpis, commodo dignissim dui auctor ac. Nulla eros neque, hendrerit in mattis sit amet, dapibus eu nisi. Sed dignissim porttitor purus, eu vulputate lorem blandit eget. Etiam tristique tortor tellus, sed venenatis sapien ullamcorper sed. Vivamus vestibulum sagittis cursus. Maecenas venenatis feugiat diam. Proin dolor dui, vulputate a posuere nec, euismod id eros.</p>
+        </div>
+        <div class="col-2">
+          <img class="img-fluid" id="banner" src="/static/people_working.jpg" >
+        </div>
+      </div>
       <h2>Job Openings</h2>
       <div>
         {% for job in jobs: %}
@@ -28,8 +36,10 @@
       </div>
       <div>
         <button class="btn btn-primary btn-large">Contact us</button>
-        <p>Copyright by me!</p>
       </div>
     </div>
   </body>
+  <footer>
+    {% include 'footer.html' %}
+  </footer>
 </html>
