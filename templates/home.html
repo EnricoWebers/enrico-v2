@@ -20,12 +20,12 @@
     <div class="container text-center">
       <h2>About {{company_name}}</h2>
       <div class="row">
-        <div class="col-10">
+        <div class="col-8">
           <p class="lead">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare condimentum imperdiet. Nunc interdum lacus ante, et facilisis eros porttitor aliquam. Pellentesque pulvinar non augue vitae placerat. Quisque efficitur at libero in condimentum. Etiam sit amet neque ac risus commodo fermentum a non leo. Morbi eleifend tellus arcu, vel accumsan diam scelerisque congue. Integer scelerisque porta turpis, commodo dignissim dui auctor ac. Nulla eros neque, hendrerit in mattis sit amet, dapibus eu nisi. Sed dignissim porttitor purus, eu vulputate lorem blandit eget. Etiam tristique tortor tellus, sed venenatis sapien ullamcorper sed. Vivamus vestibulum sagittis cursus. Maecenas venenatis feugiat diam. Proin dolor dui, vulputate a posuere nec, euismod id eros.</p>
         </div>
-        <div class="col-2">
-          <img class="img-fluid" id="banner" src="/static/people_working.jpg" >
+        <div class="col-4">
+          <img class="img-fluid" id="banner" src="/static/people_working.jpg" style="height:300px; border-radius:4px">
         </div>
       </div>
       <h2>Job Openings</h2>
@@ -35,7 +35,7 @@
         {% endfor %}
       </div>
       <div>
-        <button class="btn btn-primary btn-large">Contact us</button>
+        <a href="mailto:enricowebers@gmail.com?subject=Question%20about%20job%20openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Cyour%20question%20here%3E" class="btn btn-primary btn-large">Contact us</a>
       </div>
     </div>
   </body>
