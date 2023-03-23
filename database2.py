@@ -10,6 +10,7 @@ engine = create_engine(
         }
     })
 
+'''
 with engine.connect() as conn:
   result = conn.execute(text("select * from jobs"))
   column_names = result.keys()   
@@ -18,7 +19,7 @@ with engine.connect() as conn:
     result_dicts.append(dict(zip(column_names,row)))
 
   print(result_dicts)
-
+'''
 
 '''
 print("type(result): ",type(result))
@@ -32,19 +33,3 @@ print("type(first_result_dict): ",type(first_result_dict))
 print(first_result_dict)
 '''
 
-'''
-LEGACY CODE
-print("first_result: ", first_result)
-print("type(first_result): ", type(first_result))
-first_result_dict = dict(result_all[0].__dict__)
-print("type(first_result_dict): ",type(first_result_dict))
-print(first_result_dict)
-'''
-
-'''
-https://stackoverflow.com/questions/1958219/how-to-convert-sqlalchemy-row-object-to-a-python-dict
-'''
- 
-'''
-THIS VERSION WORKS according to the YouTube video https://www.youtube.com/watch?v=yBDHkveJUf4&t=10984s
-'''
