@@ -1,3 +1,4 @@
+import sqlalchemy
 from sqlalchemy import create_engine, text
 
 db_connection_string = "mysql+pymysql://g49jjg744emluyy3ilul:pscale_pw_MMlzHAqK0tFiVDcfAxBNlQcaYB6k8VVVApkp0NftflK@eu-central.connect.psdb.cloud/enricocareers?charset=utf8mb4"
