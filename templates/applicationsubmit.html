@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Submitted</title>
+    {% include 'bootstrap.html' %}
+    <style>
+      #banner {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'nav2.html' %}
+    {% include 'banner.html' %}
+    <div class="container">
+      <h2>Confirmation</h2>
+      <p>Your application for {{job['title']}} has been submitted</p>
+      <div>
+        <b>Full Name</b>
+        <p class="mb-2">{{application['full_name']}}</p>
+      </div>
+      <div>
+        <b>Email</b>
+        <p class="mb-2">{{application['email']}}</p>
+      </div>
+      <div>
+        <b>LinkedIn URL</b>
+        <p class="mb-2">{{application['linkedin']}}</p>
+      </div>
+      <div>
+        <b>Work Experience</b>
+        <p class="mb-2">{{application['work_experience']}}</p>
+      </div>
+      <div>
+        <b>Education</b>
+        <p class="mb-2">{{application['education']}}</p>
+      </div>
+      <div>
+        <b>Resume URL</b>
+        <p class="mb-2">{{application['resume_URL']}}</p>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
